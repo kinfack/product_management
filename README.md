@@ -20,7 +20,7 @@ Avant de commencer, assurez-vous d'avoir les outils suivants installés sur votr
 Clonez ce dépôt sur votre machine locale 
 
 ```bash
-git clone https://github.com/yourusername/product-management.git
+git clone https://github.com/yourusername/product_management.git
 cd product-management
 ```
 
