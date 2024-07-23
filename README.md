@@ -65,11 +65,7 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-L'application sera accessible sur http://localhost:3090.
-
-
-
-### API Endpoints
+L'application sera accessible sur http://localhost:3090 en local sur votre machine.
 
 
 ## API Endpoints
