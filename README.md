@@ -21,11 +21,8 @@ Clonez ce dépôt sur votre machine locale
 
 ```bash
 git clone https://github.com/yourusername/product_management.git
-cd product-management
+cd product_management
 ```
-
-#### Configuration de la base de données PostgreSQL
-
 
 ### 2. Configuration de la base de données PostgreSQL
 
@@ -37,10 +34,8 @@ CREATE USER postgres WITH ENCRYPTED PASSWORD 'postgres';
 GRANT ALL PRIVILEGES ON DATABASE product TO postgres;
 ```
 
-Remarque : Changez le nom d'utilisateur et le mot de passe en fonction de votre configuration PostgreSQL.
+**Remarque : Changez le nom d'utilisateur et le mot de passe en fonction de votre configuration PostgreSQL.**
 
-
-#### Configuration de l'application
 
 ### 3. Configuration de l'application
 
@@ -59,9 +54,6 @@ spring.jpa.hibernate.ddl-auto=create-drop
 springdoc.api-docs.path=/swagger/api-docs
 springdoc.swagger-ui.path=/swagger/swagger-ui.html
 ```
-
-
-#### Construction et exécution de l'application
 
 
 ### 4. Construction et exécution de l'application
@@ -133,16 +125,16 @@ class Product {
   ```
 
 
-Obtenir tous les produits
+- **Obtenir tous les produits**
 ```
 GET /products
 ```
-Obtenir un produit par ID
+- **Obtenir un produit par ID**
 ```
 GET /products/{id}
 ```
 
-Mettre à jour un produit
+- **Mettre à jour un produit**
 ```
 PATCH /products/{id}
 Content-Type: application/json
@@ -160,13 +152,10 @@ Content-Type: application/json
 }
 ```
 
-Supprimer un produit
+- **Supprimer un produit**
 ```
 DELETE /products/{id}
 ```
-
-### Documentation Swagger
-
 
 ## Documentation Swagger
 
@@ -174,8 +163,6 @@ Swagger est configuré pour documenter et tester les API. Accédez à Swagger UI
 ```
 http://localhost:3090/swagger/swagger-ui.html
 ```
-
-Tests
 
 ## Tests
 
